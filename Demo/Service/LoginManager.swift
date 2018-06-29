@@ -44,4 +44,28 @@ class LoginManager: NSObject {
             }
         })
     }
+    
+    //Mark:- forgot Password
+    
+ func forgotPasswordValue(param: Parameters, completion: @escaping ( _ statusCode : ForgotPasswordInfo) -> Void) -> Void {
+    
+    let requestMethod: HTTPMethod = .post
+    let headers = [Constant().SContentType: Constant().SApplicationJson]
+    ServiceManager.sharedInstance.requestToApi(type: ForgotPasswordInfo.self, with: URLConstant().KForgotPassword, urlMethod: requestMethod,params: param, headers: headers, encode: JSONEncoding.default, completion: { response, responseCode in
+        
+        if (response?.result.isSuccess)! {
+            if let responseValue = response?.value {
+                print("Success: \(response!)")
+                completion(responseValue)
+            }
+        }
+        else {
+            if let data = response?.data, let utf8Text = String(data: data, encoding: .utf8) {
+                print("Failure: \(utf8Text)")
+               // AppUtils.sharedInstance.failurResponse(message: utf8Text)
+            }
+        }
+    })
+    
+ }
 }

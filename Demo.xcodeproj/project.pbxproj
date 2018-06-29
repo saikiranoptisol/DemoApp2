@@ -24,6 +24,7 @@
 		8CACC0C420E4BE670009EF90 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACC0C320E4BE670009EF90 /* Constant.swift */; };
 		8CACC0C620E4BE7C0009EF90 /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACC0C520E4BE7C0009EF90 /* URLConstant.swift */; };
 		8CACC0CB20E516030009EF90 /* ForgotPasswordInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACC0CA20E516030009EF90 /* ForgotPasswordInfo.swift */; };
+		8CACC0CD20E5D1100009EF90 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACC0CC20E5D1100009EF90 /* ForgotPassword.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		8CACC0C320E4BE670009EF90 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		8CACC0C520E4BE7C0009EF90 /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = URLConstant.swift; path = ../Model/URLConstant.swift; sourceTree = "<group>"; };
 		8CACC0CA20E516030009EF90 /* ForgotPasswordInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordInfo.swift; sourceTree = "<group>"; };
+		8CACC0CC20E5D1100009EF90 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		9103D6B8E1B590411CA37CB9 /* Pods_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC9885BEA711F0E3C4F67AF /* Pods-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTests/Pods-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		DCA61628659EDBC7281DFD69 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +204,7 @@
 				8CACC08920E475EC0009EF90 /* ViewController.swift */,
 				8CACC0C320E4BE670009EF90 /* Constant.swift */,
 				8CACC0C520E4BE7C0009EF90 /* URLConstant.swift */,
+				8CACC0CC20E5D1100009EF90 /* ForgotPassword.swift */,
 				8CACC0BF20E484FC0009EF90 /* UserVc.swift */,
 			);
 			path = Controller;
@@ -459,6 +462,7 @@
 				8CACC08820E475EC0009EF90 /* AppDelegate.swift in Sources */,
 				8CACC0BA20E4798D0009EF90 /* LoginManager.swift in Sources */,
 				8CACC0C220E4BD7F0009EF90 /* ServiceManager.swift in Sources */,
+				8CACC0CD20E5D1100009EF90 /* ForgotPassword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

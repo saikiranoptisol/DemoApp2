@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zoj-43-ecr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -214,17 +214,53 @@
         <!--Forgot Password-->
         <scene sceneID="MOv-hc-cLN">
             <objects>
-                <viewController title="Forgot Password" id="zoj-43-ecr" sceneMemberID="viewController">
+                <viewController title="Forgot Password" id="zoj-43-ecr" customClass="ForgotPassword" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gjH-Vj-cby">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pHV-ZQ-Ws0">
+                                <rect key="frame" x="16" y="304" width="343" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="5GB-dx-9fa"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WO-QF-YH0">
+                                <rect key="frame" x="90.5" y="428" width="195" height="44"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="YWv-xN-u5n"/>
+                                </constraints>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitBtnTap:" destination="zoj-43-ecr" eventType="touchUpInside" id="Kcp-J5-xwr"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pHV-ZQ-Ws0" firstAttribute="centerY" secondItem="gjH-Vj-cby" secondAttribute="centerY" id="4Tc-Nd-yHP"/>
+                            <constraint firstItem="vHo-5g-cFC" firstAttribute="trailing" secondItem="3WO-QF-YH0" secondAttribute="trailing" constant="90" id="4WA-7x-QqG"/>
+                            <constraint firstItem="vHo-5g-cFC" firstAttribute="trailing" secondItem="pHV-ZQ-Ws0" secondAttribute="trailing" constant="16" id="Cmb-YZ-1xy"/>
+                            <constraint firstItem="pHV-ZQ-Ws0" firstAttribute="leading" secondItem="vHo-5g-cFC" secondAttribute="leading" constant="16" id="XIR-7f-sAw"/>
+                            <constraint firstItem="pHV-ZQ-Ws0" firstAttribute="centerX" secondItem="gjH-Vj-cby" secondAttribute="centerX" id="YEU-Iq-ztd"/>
+                            <constraint firstItem="3WO-QF-YH0" firstAttribute="top" secondItem="pHV-ZQ-Ws0" secondAttribute="bottom" constant="65" id="lNU-0I-AYU"/>
+                            <constraint firstItem="3WO-QF-YH0" firstAttribute="leading" secondItem="vHo-5g-cFC" secondAttribute="leading" constant="90" id="weQ-yI-x1P"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vHo-5g-cFC"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="pHV-ZQ-Ws0" id="wad-dw-nbx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EKg-Z6-7se" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="995" y="31"/>
+            <point key="canvasLocation" x="943" y="33"/>
         </scene>
     </scenes>
 </document>

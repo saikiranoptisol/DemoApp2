@@ -16,4 +16,6 @@ class Constant: NSObject {
      public let SBearer = "bearer"
      public let SAccessToken = "access_token"
     
+     public let PEmail: String = "email"
+    
 }

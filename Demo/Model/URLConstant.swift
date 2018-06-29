@@ -14,5 +14,6 @@ class URLConstant: NSObject {
     
     //MARK: - EndPointURL
     let KUser = "user/me"
+    let KForgotPassword = "user/sendForgetPasswordEmail"
     
 }
